@@ -7,7 +7,9 @@
 <title>To me home</title>
 </head>
 <body>
-	<button>질문 받기</button>
-	
+	<ul>
+		<li><a href="/login">login</a></li>
+		<li><a href="/signUp">signUp</a></li>
+	</ul>
 </body>
 </html>
