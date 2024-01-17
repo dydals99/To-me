@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.edu.springboot.jdbc.IUserService">
+ 	<select id="login_act" parameterType="com.edu.springboot.jdbc.UserDTO" 
+ 	resultType="com.edu.springboot.jdbc.UserDTO">
+ 		select * from userTable where email=#{param1} and password=#{param2}
+ 	</select>
+ 	<insert id="signUp_act" parameterType="com.edu.springboot.jdbc.UserDTO">
+ 		insert into userTable values (user_seq.nextval, #{email}, #{name}, #{password})
+ 	</insert>
+ 	<!-- 회원리스트 -->
+ 	<select id="select_user" parameterType="com.edu.springboot.jdbc.UserDTO" 
+ 	resultType="com.edu.springboot.jdbc.UserDTO">
+ 		select * from userTable
+ 	</select>
+</mapper>
