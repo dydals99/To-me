@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.edu.springboot.jdbc.IUserService;
 import com.edu.springboot.jdbc.UserDTO;
@@ -16,7 +17,7 @@ import jakarta.servlet.http.HttpSession;
 public class MainController {
 	
 	@Autowired
-	IUserService dao;
+	IUserService dao; 
 	
 	@RequestMapping("/")
 	public String home() {
@@ -65,5 +66,12 @@ public class MainController {
 		if(result==1) System.out.println("입력되었습니다.");
 		
 		return "user/login";
+	}
+	@RequestMapping(value="/checkemail", method=RequestMethod.POST)
+	@ResponseBody
+	public int checkEmail(UserDTO dto) {
+		int result = dao.checkEmail(dto);
+		System.out.println(result);
+        return result;
 	}
 }

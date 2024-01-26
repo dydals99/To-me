@@ -10,5 +10,6 @@ public interface IUserService {
 	public UserDTO login_act(String email, String password);
 	public int signUp_act(UserDTO dto);
 	public List<UserDTO> select_user();
+	public int checkEmail(UserDTO dto);
 }
   

@@ -15,9 +15,9 @@
 			<button onclick="location.href='logout';">로그아웃</button>
 		</c:when> 
 		<c:otherwise>
-			<a href="login">로그인</a>
-			<a href="signUp">회원가입</a>
+			<a href="/login">로그인</a>
+			<a href="/signUp">회원가입</a>
 		</c:otherwise>
 	</c:choose>
 </body>
-</html>
+</html> 

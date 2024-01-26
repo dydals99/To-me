@@ -17,4 +17,9 @@
  	resultType="com.edu.springboot.jdbc.UserDTO">
  		select * from userTable
  	</select>
+ 	
+ 	<select id="checkEmail" parameterType="com.edu.springboot.jdbc.UserDTO" 
+	resultType="int">
+		SELECT COUNT(*) FROM userTable WHERE email= #{email}
+	</select>
 </mapper>
