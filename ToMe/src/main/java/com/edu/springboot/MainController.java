@@ -19,13 +19,13 @@ public class MainController {
 	@Autowired
 	IUserService dao; 
 	
-	@RequestMapping("/")
-	public String home() {
-		
-		return "home";
-	}
+//	@RequestMapping("/")
+//	public String home() {
+//		
+//		return "home";
+//	}
 	//로그인 화면 
-	@RequestMapping("login")
+	@RequestMapping("/")
 	public String login() {
 		return "user/login";
 	}
