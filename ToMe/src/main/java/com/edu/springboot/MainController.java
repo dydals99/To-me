@@ -74,4 +74,8 @@ public class MainController {
 		System.out.println(result);
         return result;
 	}
+	@RequestMapping("/calender")
+	public String calender() {
+		return "calender/calender";
+	}
 }

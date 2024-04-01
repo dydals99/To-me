@@ -152,38 +152,38 @@ body {
 /* 커스텀 끝 */
 </style>
 <body>
-<aside class="side-bar">
-  <section class="side-bar__icon-box">
-    <section class="side-bar__icon-1">
-      <div></div>
-      <div></div>
-      <div></div>
-    </section>
-  </section>
-  <ul>
-    <li>
-      <a href="#"><i class="fa-solid fa-cat"></i> ${siteUserInfo.name}</a>
-    </li>
-    <li>
-      <a href="#">개인 홈</a>
-    </li>
-    <li>
-      <a href="#">로그아웃</a>
-    </li>
-  </ul>
-</aside>
-<section>
-<img style="display: block; object-fit: cover; border-radius: 0px; width: 100%; height: 30vh; opacity: 1; object-position: center 70%;" src="https://www.notion.so/images/page-cover/webb2.jpg">
-<div style="justify-content: center; display: flex;">
-<h1>HOME</h1>
-</div>
-<div style="justify-content: center; display: flex;">
-<ul>
-<li>일기</li>
-<li>작업목록</li>
-<li>독서록</li>
-</ul>
-</div>
-</section>
+	<aside class="side-bar">
+	  <section class="side-bar__icon-box">
+	    <section class="side-bar__icon-1">
+	      <div></div>
+	      <div></div>
+	      <div></div>
+	    </section>
+	  </section>
+	  <ul>
+	    <li>
+	      <a href="#"><i class="fa-solid fa-cat"></i> ${siteUserInfo.name}</a>
+	    </li>
+	    <li>
+	      <a href="#">개인 홈</a> 
+	    </li>
+	    <li>
+	      <a href="#">로그아웃</a>
+	    </li>
+	  </ul>
+	</aside>
+	<section>
+		<img style="display: block; object-fit: cover; border-radius: 0px; width: 100%; height: 30vh; opacity: 1; object-position: center 70%;" 
+			 src="https://www.notion.so/images/page-cover/webb2.jpg">
+		<div style="justify-content: center; display: flex;">
+			<h1>HOME</h1>
+		</div>
+		<div style="justify-content: center; display: flex;">
+			<ul>
+				<li>일기</li>
+				<li><a href="/calender">일정</a></li>
+			</ul>
+		</div>
+	</section>
 </body>
 </html> 
