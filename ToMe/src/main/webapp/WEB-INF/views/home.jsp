@@ -180,8 +180,8 @@ body {
 		</div>
 		<div style="justify-content: center; display: flex;">
 			<ul>
-				<li>일기</li>
-				<li><a href="/calender">일정</a></li>
+				<li>ToDoList</li>
+				<li><a href="/calender">Calender</a></li>
 			</ul>
 		</div>
 	</section>
